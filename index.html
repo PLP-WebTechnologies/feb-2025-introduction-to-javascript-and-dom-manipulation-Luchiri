@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Manipulation</title>
+  <style>
+    #dynamic-text {
+      color: blue;
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    #new-paragraph {
+      color: green;
+    }
+
+    button {
+      margin-right: 10px; /* Adds space between buttons */
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="main-heading">Welcome to My Page</h1>
+  </header>
+
+  <main>
+    <section>
+      <p id="dynamic-text">Click the button to change this text and style.</p>
+      <button onclick="changeText()">Change Text & Style</button>
+      <button onclick="toggleParagraph()">Add/Remove Paragraph</button>
+    </section>
+
+    <div id="paragraph-container"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
